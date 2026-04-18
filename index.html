@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Tribuna del CDI</title>
+    <link rel="icon" href="imagenes/icon.png" type="image/png">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="fonts.css">
+</head>
+<body>
+
+    <nav class="menu">
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <div class="menu-links" id="menuLinks">
+            <a href="index.html">La Tribuna del CDI</a>
+            <a href="Noticias.html">Noticias</a>
+            <a href="Encuestas.html">Encuestas</a>
+            <a href="Resultados.html">Resultados</a>
+            <a href="eventos.html">Próximos Eventos</a>
+            <a href="equipos.html">Equipos</a>
+            <a href="estadisticas.html">Estadísticas</a>
+            <a href="Entrevistas.html">Entrevistas</a>
+            <a href="Quienes-Somos.html">Quienes Somos</a>
+        </div>
+    </nav>
+
+    <main class="hero-simple">
+        <div class="content-fly">
+            <div class="logo-container">
+                <img src="imagenes/logo transparente.png" alt="Logo La Tribuna del CDI" class="logo-max">
+            </div>
+            <p class="descripcion-simple">
+                Este periódico deportivo fue creado con el objetivo de generar mayor interés por los deportes dentro del colegio. Buscamos que los estudiantes puedan informarse sobre cómo les fue a las selecciones en cada disciplina, como fútbol, vóley, básquet y futsal. Además, queremos motivar a más compañeros a involucrarse, ya sea participando o asistiendo a los partidos, fomentando así el apoyo, el entusiasmo y el sentido de comunidad en cada encuentro deportivo.
+            </p>
+        </div>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            const links = document.getElementById("menuLinks");
+            links.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
