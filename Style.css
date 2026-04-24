@@ -1,0 +1,253 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #ffffff; /* Fondo de la página totalmente blanco */
+}
+
+/* --- BARRA DE NAVEGACIÓN --- */
+.menu {
+    background-color: #1D3557; /* Azul oscuro de base */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu-links {
+    display: flex;
+    gap: 30px;
+}
+
+/* 1. Cuando nadie toca nada: Todos en Blanco */
+.menu-links a {
+    color: white; 
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+/* 2. Cuando el cursor entra a la BARRA: Todos se vuelven Grises */
+.menu:hover .menu-links a {
+    color: #b0b0b0; /* Gris */
+}
+
+/* 3. Cuando el cursor está SOBRE UNO específico: Ese se vuelve Blanco */
+.menu-links a:hover {
+    color: white !important; 
+    transform: scale(1.05);
+}
+
+/* --- SECCIÓN DEL LOGO (SIN CUADRADO) --- */
+.hero-simple {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff; /* Sin fondo rojo */
+}
+
+.content-fly {
+    max-width: 900px;
+    padding: 20px;
+}
+
+.logo-principal {
+    width: 150px;
+    margin-bottom: 20px;
+    /* Si el logo tiene fondo blanco, aquí se verá transparente sobre el fondo */
+}
+
+.titulo-principal {
+    color: #1D3557; /* Usamos el azul para que resalte sobre el blanco */
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.descripcion-simple {
+    color: #555;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* RESPONSIVO MÓVIL */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle { display: block; }
+    .menu-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        background: #1D3557;
+        width: 100%;
+        padding: 20px;
+        left: 0;
+    }
+    .menu-links.active { display: flex; }
+    .titulo-principal { font-size: 2rem; }
+}
+/* Estilos para el logo gigante y transparente */
+.hero-simple {
+    background-color: #ffffff; /* Fondo blanco */
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+.logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px; /* Espacio con el texto */
+}
+.logo-max {
+    /* AQUÍ CONTROLAS EL TAMAÑO */
+    width: 350px;           /* Mucho más grande, ajusta a tu gusto */
+    height: auto;           /* Mantiene la proporción */
+    
+    /* Aseguramos que no haya fondos raros */
+    background-color: transparent !important; 
+    border: none !important;
+    box-shadow: none !important;
+
+    /* Opcional: una sombra muy suave para dar calidad */
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
+}
+.descripcion-simple {
+    /* Ajustamos el texto para que no se pegue al logo gigante */
+    margin-top: 0;
+    font-size: 1.3rem; /* Un pelín más grande para equilibrar */
+}
+
+:root {
+    --espn-gray-bg: #f4f5f7;
+    --espn-border: #e2e4e7;
+    --espn-text-black: #2b2c2d;
+    --espn-text-gray: #6c6d6f;
+}
+
+.navbar-principal {
+    padding: 15px;
+    margin-bottom: 40px;
+}
+
+.torneo-wrapper {
+    max-width: 900px; /* Tamaño estándar de columna de ESPN */
+    margin: 0 auto;
+}
+
+.header-evento {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--espn-text-black);
+    margin-bottom: 6px;
+    padding-left: 5px;
+}
+
+.deporte-card {
+    background: #fff;
+    border: 1px solid var(--espn-border);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.deporte-nombre {
+    font-size: 13px;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 12px 16px;
+    margin: 0;
+    border-bottom: 1px solid var(--espn-border);
+    color: var(--espn-text-black);
+}
+
+.partido-fila {
+    display: flex;
+    grid-template-columns: 1.5fr 1.5fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    border-bottom: 1px solid var(--espn-border);
+}
+
+.info-marcador {
+    flex-grow: 1;
+    max-width: 423px; /* Controla el ancho de los nombres */
+}
+
+.estado {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--espn-text-gray);
+    margin-bottom: 8px;
+}
+
+.equipo-renglon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px 0;
+}
+
+.club {
+    display: flex;
+    align-items: center;
+}
+
+.escudo {
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    object-fit: contain;
+}
+
+.nombre-equipo {
+    font-size: 15px;
+    color: var(--espn-text-gray);
+}
+
+.puntaje {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--espn-text-gray);
+}
+
+/* El ganador resalta en negro */
+.ganador .nombre-equipo, 
+.ganador .puntaje {
+    color: #000;
+    font-weight: 800;
+}
+.estado {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--espn-text-gray);
+    margin-bottom: 8px; /* Espacio entre la fecha y los equipos */
+    text-transform: uppercase; /* Opcional: para que salga en mayúsculas */
+}
