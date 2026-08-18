@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrevistas</title>
+    <link rel="icon" href="imagenes/icon.png" type="image/png">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="fonts.css">
+</head>
+<body>
+    <nav class="menu">
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <div class="menu-links" id="menuLinks">
+            <a href="index.html">La Tribuna del CDI</a>
+            <a href="Articulos.html">Articulos</a>
+            <a href="Resultados.html">Resultados</a>
+        </div>
+    </nav>
+
+    <main class="entrevistas-page">
+        <section class="torneo-wrapper entrevistas-torneo">
+            <header class="header-evento">
+                SIL, Intercolegial, 2026
+            </header>
+
+            <div class="feed-container entrevistas-feed">
+                <div class="card entrevista-card" data-date="2026-04-26" data-order="1">
+                    <div class="video-wrapper">
+                        <video class="main-video" preload="metadata" controls>
+                            <source src="videos/entrevista12.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="card-content">
+                        <p class="entrevista-meta">Domingo, 26 de Abril · Basket FEM · Semifinal</p>
+                        <h2 class="video-title">¡Cabeza arriba! Las chicas de básquet caen en semifinales ante las Almenas</h2>
+                        <p class="video-description">CDI 20 VS 34 Almenas. Entrevista con la capitana: Ambar "Toti" Samaniego.</p>
+                    </div>
+                </div>
+
+                <div class="card entrevista-card" data-date="2026-04-24" data-order="2">
+                    <div class="video-wrapper">
+                        <video class="main-video" preload="metadata" controls>
+                            <source src="videos/entrevista11.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="card-content">
+                        <p class="entrevista-meta">Viernes, 24 de Abril · Futbol MASC · Fase de Grupos</p>
+                        <h2 class="video-title">¡A octavos! Los chicos de futbol pasan como lideres de grupo</h2>
+                        <p class="video-description">CDI 2 VS 0 Cerritos. Entrevista con Gonzalo Leon (MVP) y Elias Garrido (Capitan).</p>
+                    </div>
+                </div>
+
+                <div class="card entrevista-card" data-date="2026-04-24" data-order="1">
+                    <div class="video-wrapper">
+                        <video class="main-video" preload="metadata" controls>
+                            <source src="videos/entrevista10.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="card-content">
+                        <p class="entrevista-meta">Viernes, 24 de Abril · Basket MASC · Cuartos</p>
+                        <h2 class="video-title">Básquet masculino se despide del torneo ante el local</h2>
+                        <p class="video-description">CDI 14 VS 39 SIL. Entrevista con el referente: Enzo Martínez.</p>
+                    </div>
+                </div>
+
+                <div class="card entrevista-card" data-date="2026-04-19" data-order="3">
+                    <div class="video-wrapper">
+                        <video class="main-video" preload="metadata" controls>
+                            <source src="videos/entrevista9.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="card-content">
+                        <p class="entrevista-meta">Domingo, 19 de Abril · Volley MASC · Fase de Grupos</p>
+                        <h2 class="video-title">Una grande derrota a los chicos de vóley</h2>
+                        <p class="video-description">CDI 0 VS 2 CRISTO REY. Entrevista con el referente: Juan Paredes.</p>
+                    </div>
+                </div>
+
+                <div class="card entrevista-card" data-date="2026-04-19" data-order="2">
+                    <div class="video-wrapper">
+                        <video class="main-video" preload="metadata" controls>
+                            <source src="videos/entrevista8.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="card-content">
+                        <p class="entrevista-meta">Domingo, 19 de Abril · Futbol MASC · Fase de Grupos</p>
+                        <h2 class="video-title">Victoria mañanera para futbol masculino</h2>
+                        <p class="video-description">CDI 1 VS 0 GUTEMBERG. Entrevista con el MVP: Elias Garrido.</p>
+                    </div>
+                </div>
+
+                <div class="card entrevista-card" data-date="2026-04-19" data-order="1">
+                    <div class="video-wrapper">
+                        <video class="main-video" preload="metadata" controls>
+                            <source src="videos/entrevista7.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="card-content">
+                        <p class="entrevista-meta">Domingo, 19 de Abril · Volley MASC · Fase de Grupos</p>
+                        <h2 class="video-title">Duro inicio para vóley masculino</h2>
+                        <p class="video-description">CDI 0 VS 2 CBVM. Entrevista con el referente: Edgar Sanchez.</p>
+                    </div>
+                </div>
+
+                <div class="card entrevista-card" data-date="2026-04-18" data-order="4">
+                    <div class="video-wrapper">
+                        <video class="main-video" preload="metadata" controls>
+                            <source src="videos/entrevista6.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="card-content">
+                        <p class="entrevista-meta">Sábado, 18 de Abril · Basket FEM · Fase de Grupos</p>
+                        <h2 class="video-title">Básquet femenino da vuelta el resultado contra el CEPB</h2>
+                        <p class="video-description">CDI 43 VS 33 CEPB. Entrevista con Mora Martínez (MVP) y la referente: Ambar "Toti" Samaniego.</p>
+                    </div>
+                </div>
+
+                <div class="card entrevista-card" data-date="2026-04-18" data-order="3">
+                    <div class="video-wrapper">
+                        <video class="main-video" preload="metadata" controls>
+                            <source src="videos/entrevista5.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="card-content">
+                        <p class="entrevista-meta">Sábado, 18 de Abril · Futbol FEM · Fase de Grupos</p>
+                        <h2 class="video-title">Empate en ceros contra las locales</h2>
+                        <p class="video-description">CDI 0 VS 0 SIL. Entrevista con la referente: Paula Almirón.</p>
+                    </div>
+                </div>
+
+                <div class="card entrevista-card" data-date="2026-04-18" data-order="2">
+                    <div class="video-wrapper">
+                        <video class="main-video" preload="metadata" controls>
+                            <source src="videos/entrevista4.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="card-content">
+                        <p class="entrevista-meta">Sábado, 18 de Abril · Futbol FEM · Fase de Grupos</p>
+                        <h2 class="video-title">Futbol femenino reparte puntos ante el Colegio del Sol</h2>
+                        <p class="video-description">CDI 0 VS 0 CDS. Entrevista con la capitana: Gabriela Gibert.</p>
+                    </div>
+                </div>
+
+                <div class="card entrevista-card" data-date="2026-04-18" data-order="1">
+                    <div class="video-wrapper">
+                        <video class="main-video" preload="metadata" controls>
+                            <source src="videos/entrevista3.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="card-content">
+                        <p class="entrevista-meta">Sábado, 18 de Abril · Basket MASC · Fase de Grupos</p>
+                        <h2 class="video-title">Los chicos de básquet siguen a pasos firmes y siguen sumando victorias para pasar</h2>
+                        <p class="video-description">CDI 38 VS 16 ACA. Entrevista con el MVP: Gonzalo Leon.</p>
+                    </div>
+                </div>
+
+                <div class="card entrevista-card" data-date="2026-04-17" data-order="2">
+                    <div class="video-wrapper">
+                        <video class="main-video" preload="metadata" controls>
+                            <source src="videos/entrevista2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="card-content">
+                        <p class="entrevista-meta">Viernes, 17 de Abril · Basket FEM · Fase de Grupos</p>
+                        <h2 class="video-title">Las chicas de básquet se imponen con un gran resultado</h2>
+                        <p class="video-description">CDI 39 VS 12 IMMACULLÉ. Entrevista con la MVP: Ambar "Toti" Samaniego.</p>
+                    </div>
+                </div>
+
+                <div class="card entrevista-card" data-date="2026-04-17" data-order="1">
+                    <div class="video-wrapper">
+                        <video class="main-video" preload="metadata" controls>
+                            <source src="videos/entrevista1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="card-content">
+                        <p class="entrevista-meta">Viernes, 17 de Abril · Basket MASC · Fase de Grupos</p>
+                        <h2 class="video-title">El campeón empieza el torneo con el pie derecho</h2>
+                        <p class="video-description">CDI 46 VS 26 IMMACULLÉ. Entrevista con Martin Blanco (MVP) y El referente: Oscar Franco.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            const links = document.getElementById("menuLinks");
+            links.classList.toggle("active");
+        }
+
+        const interviewFeeds = document.querySelectorAll(".entrevistas-feed");
+        interviewFeeds.forEach(feed => {
+            const interviews = Array.from(feed.querySelectorAll(".entrevista-card[data-date]"));
+            interviews
+                .sort((a, b) => {
+                    const dateDifference = new Date(b.dataset.date) - new Date(a.dataset.date);
+                    if (dateDifference !== 0) return dateDifference;
+                    return Number(b.dataset.order || 0) - Number(a.dataset.order || 0);
+                })
+                .forEach(interview => feed.appendChild(interview));
+        });
+    </script>
+</body>
+</html>
